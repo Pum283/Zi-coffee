@@ -8,6 +8,7 @@
 **/*.log
 
 # Editor/OS
+.vs/
 .vscode/*
 !.vscode/extensions.json
 .idea
