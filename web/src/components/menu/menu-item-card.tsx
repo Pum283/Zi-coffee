@@ -11,6 +11,8 @@ type Props = {
 export function MenuItemCard({ item, onOpen }: Props) {
   const { language } = useI18n()
   const name = t(item.name, language)
+  const coverImageSrc = item.imageSources?.[0] ?? item.imageSrc
+
   return (
     <button
       type="button"
@@ -19,9 +21,9 @@ export function MenuItemCard({ item, onOpen }: Props) {
       aria-label={name}
     >
       <div className="overflow-hidden rounded-[calc(var(--zi-radius)-1px)] border-b border-[rgb(var(--zi-line))] bg-[rgb(var(--zi-surface))]">
-        {item.imageSrc ? (
+        {coverImageSrc ? (
           <img
-            src={item.imageSrc}
+            src={coverImageSrc}
             alt={name}
             className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
             loading="lazy"

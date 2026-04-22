@@ -18,6 +18,7 @@ export type MenuItem = {
   description: LocalizedString
   priceVnd: number
   imageSrc?: string
+  imageSources?: string[]
 }
 
 export type MenuSection = {

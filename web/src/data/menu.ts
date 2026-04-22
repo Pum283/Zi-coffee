@@ -51,6 +51,7 @@ export const MENU_DATA: Record<MenuCategoryKey, MenuCategory> = {
             },
             priceVnd: 120_000,
             imageSrc: veggieDelightSaladImage,
+            imageSources: [veggieDelightSaladImage, salmonSaladImage, chickenSaladImage],
           },
           {
             id: 'salmon-salad',
